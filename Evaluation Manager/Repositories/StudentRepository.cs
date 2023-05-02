@@ -35,7 +35,7 @@ namespace Evaluation_Manager.Repositories
             var reader = DB.GetDataReader(sql);
             while (reader.Read())
             {
-                Student student = CreateOject();
+                Student student = CreateObject(reader);
                 students.Add(student);
             }
             reader.Close();
