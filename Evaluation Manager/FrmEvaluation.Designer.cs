@@ -86,6 +86,7 @@
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Spremi";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -95,6 +96,7 @@
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Odustani";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // cboActivities
             // 
@@ -103,6 +105,7 @@
             this.cboActivities.Name = "cboActivities";
             this.cboActivities.Size = new System.Drawing.Size(309, 21);
             this.cboActivities.TabIndex = 8;
+            this.cboActivities.SelectedIndexChanged += new System.EventHandler(this.cboActivities_SelectedIndexChanged);
             // 
             // lblActivity
             // 
@@ -187,7 +190,7 @@
             this.Controls.Add(this.txtMinForSignature);
             this.Controls.Add(this.txtActivityDescription);
             this.Name = "FrmEvaluation";
-            this.Text = "Form1";
+            this.Text = "Forma za evaluaciju";
             ((System.ComponentModel.ISupportInitialize)(this.numPoints)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

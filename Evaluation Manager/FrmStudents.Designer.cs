@@ -28,19 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnEvaluteStudent = new System.Windows.Forms.Button();
+            this.dgvStudents = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnEvaluteStudent
+            // 
+            this.btnEvaluteStudent.Location = new System.Drawing.Point(584, 384);
+            this.btnEvaluteStudent.Name = "btnEvaluteStudent";
+            this.btnEvaluteStudent.Size = new System.Drawing.Size(107, 23);
+            this.btnEvaluteStudent.TabIndex = 0;
+            this.btnEvaluteStudent.Text = "Evaluiraj studenta";
+            this.btnEvaluteStudent.UseVisualStyleBackColor = true;
+            this.btnEvaluteStudent.Click += new System.EventHandler(this.btnEvaluteStudent_Click);
+            // 
+            // dgvStudents
+            // 
+            this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudents.Location = new System.Drawing.Point(28, 21);
+            this.dgvStudents.Name = "dgvStudents";
+            this.dgvStudents.Size = new System.Drawing.Size(663, 343);
+            this.dgvStudents.TabIndex = 1;
+            this.dgvStudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // FrmStudents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(703, 419);
+            this.Controls.Add(this.dgvStudents);
+            this.Controls.Add(this.btnEvaluteStudent);
             this.Name = "FrmStudents";
             this.Text = "FrmStudents";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnEvaluteStudent;
+        private System.Windows.Forms.DataGridView dgvStudents;
     }
 }

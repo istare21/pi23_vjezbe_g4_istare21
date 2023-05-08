@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Evaluation_Manager.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,21 @@ namespace Evaluation_Manager
         public FrmStudents()
         {
             InitializeComponent();
+        }
+
+        private void btnEvaluteStudent_Click(object sender, EventArgs e)
+        {
+            Student selectedStudent = dgvStudents.CurrentRow.DataBoundItem as Student;
+            if (selectedStudent != null)
+            {
+                FrmEvaluation frmEvaluation = new FrmEvaluation(selectedStudent);
+                frmEvaluation.ShowDialog();
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
