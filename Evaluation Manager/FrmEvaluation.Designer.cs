@@ -48,6 +48,7 @@
             this.txtActivityDescription.Name = "txtActivityDescription";
             this.txtActivityDescription.Size = new System.Drawing.Size(776, 292);
             this.txtActivityDescription.TabIndex = 0;
+            this.txtActivityDescription.TextChanged += new System.EventHandler(this.txtActivityDescription_TextChanged);
             // 
             // txtMinForSignature
             // 

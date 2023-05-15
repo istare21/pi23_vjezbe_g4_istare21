@@ -64,5 +64,10 @@ namespace Evaluation_Manager {
         {
             Close();
         }
+
+        private void txtActivityDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
