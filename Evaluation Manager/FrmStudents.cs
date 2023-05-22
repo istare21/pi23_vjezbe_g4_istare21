@@ -28,8 +28,6 @@ namespace Evaluation_Manager
             }
         }
 
-        private void btnGenerateRepoort_Click(object sender, Event)
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

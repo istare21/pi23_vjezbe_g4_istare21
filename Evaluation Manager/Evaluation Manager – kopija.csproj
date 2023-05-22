@@ -76,6 +76,8 @@
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\StudentReportView.cs" />
     <Compile Include="Models\Teacher.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Repositories\ActivityRepository.cs" />
     <Compile Include="Repositories\EvaluationRepository.cs" />
